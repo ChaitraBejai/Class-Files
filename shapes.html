@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Shapes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background-color: midnightblue;
+        }
+        div{
+            
+        }
+        .square{
+            width:120px;
+            height:120px;
+            background-color:lightblue;
+        }
+        .circle{
+            width:120px;
+            height:120px;
+            background-color:lightgoldenrodyellow;
+            border-radius: 50%;
+        }
+        .rectangle{
+            width:160px;
+            height:120px;
+            background-color:lightpink;
+        }
+        .triangle{
+            width:0px;
+            height:0px;
+            border-left:60px solid transparent;
+            border-right:60px solid transparent;
+            border-bottom:120px solid tan;
+        }
+        .pentagon{
+            width:0px;
+            height:0px;
+            border-left:60px solid transparent;
+            border-top:60px solid transparent;
+            border-bottom:120px solid thistle;
+            border-right:160px solid thistle;
+        }
+        .stupidshape{
+            width:0px;
+            height:0px;
+            border-bottom:60px solid transparent;
+            border-top:60px solid transparent;
+            border-right:120px solid rgb(209, 216, 191);
+            border-left:120px solid rgb(209, 216, 191);
+        }
+        .flex{
+            background-color: slateblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .flex-vertical{
+            background-color: rosybrown;
+            display: flex;
+            margin:auto;
+            flex-direction: column;
+            align-items: center;
+        }.one{
+            display: inline-flex;
+        }
+        .two{
+            display: inline-flex;
+        }.three{
+            flex-direction: column;
+            justify-content: flex-start;
+            height:600px;
+        }
+        .make-it-center{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+            <div class="square"></div>
+            <div class="circle"></div>
+            <div class="rectangle"></div>
+    </div>
+    <div class="flex-vertical one">
+        <div class="triangle"></div>
+        <div class="pentagon"></div>
+        <div class="stupidshape"></div>
+    </div>
+    <div class="make-it-center">
+        <div class="flex-vertical two">
+            <div class="triangle"></div>
+            <div class="pentagon"></div>
+            <div class="stupidshape"></div>
+        </div>
+    </div>
+    <div class="flex-vertical three">
+        <div class="triangle"></div>
+        <div class="pentagon"></div>
+        <div class="stupidshape"></div>
+    </div>
+</body>
+</html>
